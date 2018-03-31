@@ -1,3 +1,14 @@
+#import the modules we need, for creating a GUI
+import Tkinter
+
+#only press return once
+okToPressReturn = True
+
+#the player's attributes.
+hunger = 100
+day = 0
+
+
 def startGame(event):
 
     global okToPressReturn
@@ -93,32 +104,32 @@ def isAlive():
 
 
 #create a GUI window.
-root = tkinter.Tk()
+root = Tkinter.Tk()
 #set the title.
 root.title("Stay Alive!")
 #set the size.
 root.geometry("500x300")
 
 #add a label for the start text.
-startLabel = tkinter.Label(root, text="Press 'Return' to start!", font=('Helvetica', 12))
+startLabel = Tkinter.Label(root, text="Press 'Return' to start!", font=('Helvetica', 12))
 startLabel.pack()
 
 #add a hunger label.
-hungerLabel = tkinter.Label(root, text="Hunger: " + str(hunger), font=('Helvetica', 12))
+hungerLabel = Tkinter.Label(root, text="Hunger: " + str(hunger), font=('Helvetica', 12))
 hungerLabel.pack()
 
 #add a 'day' label.
-dayLabel = tkinter.Label(root, text="Day: " + str(day), font=('Helvetica', 12))
+dayLabel = Tkinter.Label(root, text="Day: " + str(day), font=('Helvetica', 12))
 dayLabel.pack()
 
-hungryphoto = tkinter.PhotoImage(file="hungry.gif")
-normalphoto = tkinter.PhotoImage(file="normal.gif")
+hungryphoto = Tkinter.PhotoImage(file="hungry.gif")
+normalphoto = Tkinter.PhotoImage(file="normal.gif")
 
 #add a cat image
-catPic = tkinter.Label(root, image=normalphoto)
+catPic = Tkinter.Label(root, image=normalphoto)
 catPic.pack()
 
-btnFeed = tkinter.Button(root, text="Feed Me", command=feed)
+btnFeed = Tkinter.Button(root, text="Feed Me", command=feed)
 btnFeed.pack()
 
 #run the 'startGame' function when the enter key is pressed.
