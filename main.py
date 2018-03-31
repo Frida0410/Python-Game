@@ -15,7 +15,7 @@ def startGame(event):
 
         okToPressReturn = False
 
-#-------------------------------------------------------------------
+
  
 def updateDisplay():
 
@@ -37,7 +37,7 @@ def updateDisplay():
     #run the function again after 100ms.       
     catPic.after(100, updateDisplay)
 
-#-------------------------------------------------------------------
+
  
 def updateHunger():
 
@@ -51,7 +51,7 @@ def updateHunger():
         #run the function again after 500ms.
         hungerLabel.after(500, updateHunger)
 
-#-------------------------------------------------------------------
+
 
 def updateDay():
 
@@ -65,7 +65,6 @@ def updateDay():
         #run the function again after 5 seconds.
         dayLabel.after(5000, updateDay)
 
-#-------------------------------------------------------------------
 
 def feed():
 
@@ -77,7 +76,7 @@ def feed():
         else:
             hunger -=20
         
-#-------------------------------------------------------------------
+
 
 def isAlive():
 
@@ -90,7 +89,7 @@ def isAlive():
     else:
         return True
         
-#-------------------------------------------------------------------
+
 
 
 #create a GUI window.
