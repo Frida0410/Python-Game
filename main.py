@@ -122,8 +122,8 @@ hungerLabel.pack()
 dayLabel = Tkinter.Label(root, text="Day: " + str(day), font=('Helvetica', 12))
 dayLabel.pack()
 
-hungryphoto = Tkinter.PhotoImage(file="hungry.gif")
-normalphoto = Tkinter.PhotoImage(file="normal.gif")
+hungryphoto = Tkinter.PhotoImage(file="hungry.GIF")
+normalphoto = Tkinter.PhotoImage(file="normal.GIF")
 
 #add a cat image
 catPic = Tkinter.Label(root, image=normalphoto)
